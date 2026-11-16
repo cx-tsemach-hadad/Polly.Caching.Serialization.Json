@@ -30,6 +30,8 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Polly" Version="7.0.0" />
+    <!-- Pin transitive System.Net.Http (via NETStandard.Library 1.6.1) to a version fixing CVE-2018-8292 -->
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
   <Import Project="..\Polly.Caching.Serialization.Json.Shared\Polly.Caching.Serialization.Json.Shared.projitems" Label="Shared" />
 </Project>
